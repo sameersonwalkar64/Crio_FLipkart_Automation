@@ -2,28 +2,28 @@
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-21T06:38:21Z" name="Test Suite for Buildout" finished-at="2024-12-21T06:39:18Z" duration-ms="56876">
+  <suite started-at="2024-12-21T06:49:30Z" name="Test Suite for Buildout" finished-at="2024-12-21T06:50:18Z" duration-ms="48415">
     <groups>
     </groups>
-    <test started-at="2024-12-21T06:38:21Z" name="Test Cases for Buildout" finished-at="2024-12-21T06:39:18Z" duration-ms="56876">
+    <test started-at="2024-12-21T06:49:30Z" name="Test Cases for Buildout" finished-at="2024-12-21T06:50:18Z" duration-ms="48415">
       <class name="demo.TestCases">
-        <test-method is-config="true" signature="startBrowser()[pri:0, instance:demo.TestCases@dfddc9a]" started-at="2024-12-21T12:08:21Z" name="startBrowser" finished-at="2024-12-21T12:08:27Z" duration-ms="6260" status="PASS">
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:demo.TestCases@dfddc9a]" started-at="2024-12-21T12:19:30Z" name="startBrowser" finished-at="2024-12-21T12:19:34Z" duration-ms="3780" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method signature="testcase01()[pri:0, instance:demo.TestCases@dfddc9a]" started-at="2024-12-21T12:08:27Z" name="testcase01" finished-at="2024-12-21T12:08:51Z" duration-ms="24491" status="PASS">
+        <test-method signature="testCase01()[pri:0, instance:demo.TestCases@dfddc9a]" started-at="2024-12-21T12:19:34Z" name="testCase01" finished-at="2024-12-21T12:19:55Z" duration-ms="21023" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testcase01 -->
-        <test-method signature="testcase02()[pri:0, instance:demo.TestCases@dfddc9a]" started-at="2024-12-21T12:08:51Z" name="testcase02" finished-at="2024-12-21T12:09:05Z" duration-ms="13695" status="PASS">
+        </test-method> <!-- testCase01 -->
+        <test-method signature="testCase02()[pri:0, instance:demo.TestCases@dfddc9a]" started-at="2024-12-21T12:19:55Z" name="testCase02" finished-at="2024-12-21T12:20:08Z" duration-ms="12899" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testcase02 -->
-        <test-method signature="testcase03()[pri:0, instance:demo.TestCases@dfddc9a]" started-at="2024-12-21T12:09:05Z" name="testcase03" finished-at="2024-12-21T12:09:18Z" duration-ms="12415" status="PASS">
+        </test-method> <!-- testCase02 -->
+        <test-method signature="testCase03()[pri:0, instance:demo.TestCases@dfddc9a]" started-at="2024-12-21T12:20:08Z" name="testCase03" finished-at="2024-12-21T12:20:17Z" duration-ms="9912" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testcase03 -->
-        <test-method is-config="true" signature="endTest()[pri:0, instance:demo.TestCases@dfddc9a]" started-at="2024-12-21T12:09:18Z" name="endTest" finished-at="2024-12-21T12:09:18Z" duration-ms="0" status="PASS">
+        </test-method> <!-- testCase03 -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:demo.TestCases@dfddc9a]" started-at="2024-12-21T12:20:17Z" name="endTest" finished-at="2024-12-21T12:20:18Z" duration-ms="777" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
