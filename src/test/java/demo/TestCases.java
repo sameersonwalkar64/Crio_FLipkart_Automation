@@ -1,6 +1,8 @@
 package demo;
 
-import org.openqa.selenium.By;
+import java.time.Duration;
+import java.util.logging.Level;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -10,16 +12,12 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.logging.Level;
-
-
 // import io.github.bonigarcia.wdm.WebDriverManager;
 import demo.wrappers.Wrappers;
 
 public class TestCases {
     ChromeDriver driver;
+    Wrappers wrappers=new Wrappers();
 
     /*
      * TODO: Write your tests here with testng @Test annotation. 
@@ -51,13 +49,40 @@ public class TestCases {
         driver = new ChromeDriver(options);
 
         driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        }
+
+    @Test
+    public void testcase01() throws InterruptedException  {
+        wrappers.navigateToFlipkart(driver);
+        wrappers.searchItem("Washing Machine", driver);
+        Thread.sleep(2000);
+        wrappers.sortByPopularity(driver);
+        Thread.sleep(3000);
+        System.out.println(wrappers.getCountRatings(driver));
     }
 
+    @Test
+    public void testcase02() throws InterruptedException  {
+        wrappers.navigateToFlipkart(driver);
+        Thread.sleep(5000);
+        wrappers.closePopup(driver);
+        wrappers.searchItem("iPhone", driver);
+        wrappers.getIphoneTitles(driver);
+    }
+
+    @Test
+    public void testcase03() throws InterruptedException  {
+        wrappers.navigateToFlipkart(driver);
+        wrappers.searchItem("Coffee Mug", driver);
+        wrappers.getHighestRatings(driver);
+
+    }
     @AfterTest
     public void endTest()
     {
-        driver.close();
-        driver.quit();
+        // driver.close();
+        // driver.quit();
 
     }
 }
