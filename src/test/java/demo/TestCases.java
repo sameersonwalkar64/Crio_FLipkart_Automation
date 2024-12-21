@@ -53,7 +53,7 @@ public class TestCases {
         }
 
     @Test
-    public void testcase01() throws InterruptedException  {
+    public void testCase01() throws InterruptedException  {
         wrappers.navigateToFlipkart(driver);
         wrappers.searchItem("Washing Machine", driver);
         Thread.sleep(2000);
@@ -63,7 +63,7 @@ public class TestCases {
     }
 
     @Test
-    public void testcase02() throws InterruptedException  {
+    public void testCase02() throws InterruptedException  {
         wrappers.navigateToFlipkart(driver);
         Thread.sleep(5000);
         wrappers.closePopup(driver);
@@ -72,7 +72,7 @@ public class TestCases {
     }
 
     @Test
-    public void testcase03() throws InterruptedException  {
+    public void testCase03() throws InterruptedException  {
         wrappers.navigateToFlipkart(driver);
         wrappers.searchItem("Coffee Mug", driver);
         wrappers.getHighestRatings(driver);
